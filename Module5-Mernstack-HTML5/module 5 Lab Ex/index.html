@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Multimedia & Shapes</title>
+</head>
+
+<body>
+    <!-- Audio Tag with Muted, Loop, and Autoplay -->
+    <h2>Audio Example</h2>
+    <audio controls muted loop autoplay>
+        <source src="/formula-1-racing-28761.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Video Tag with Muted, Loop, and Autoplay -->
+    <h2>Video Example</h2>
+    <video width="400" height="250" controls muted loop autoplay>
+        <source src="/Center fruit final 45 sec.mov.mp4" type="video/mp4">
+
+    </video>
+
+    <!-- Canvas Tag: Drawing Shapes -->
+    <h2>Canvas Example</h2>
+    <canvas id="myCanvas" width="400" height="200" style="border:1px solid #000;">
+        Your browser does not support the canvas tag.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Draw a rectangle
+        ctx.fillStyle = "blue";
+        ctx.fillRect(20, 20, 150, 100);
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(250, 100, 50, 0, 2 * Math.PI);
+        ctx.fillStyle = "red";
+        ctx.fill();
+    </script>
+
+    <!-- SVG Tag: Drawing Shapes -->
+    <h2>SVG Example</h2>
+    <svg width="400" height="200">
+        <!-- Rectangle -->
+        <rect x="20" y="20" width="150" height="100" fill="blue" stroke="black" stroke-width="2" />
+        <!-- Circle -->
+        <circle cx="250" cy="100" r="50" fill="red" stroke="black" stroke-width="2" />
+    </svg>
+
+</body>
+
+</html
